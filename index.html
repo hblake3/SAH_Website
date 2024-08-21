@@ -151,8 +151,8 @@
                                                             </div>
                                                             <select id="makeSelect" class="form-select" aria-label="Select make">
                                                                 <option value="" selected disabled>Select a make</option>
-                                                                <option value="BMW">Acura</option>
-                                                                <option value="Acura">BMW</option>
+                                                                <option value="Acura">Acura</option>
+                                                                <option value="BMW">BMW</option>
                                                                 <option value="Ford">Ford</option>
                                                                 <option value="Honda">Honda</option>
                                                                 <option value="Kia">Kia</option>
@@ -1109,6 +1109,7 @@
             if (selectedMake && selectedYear) {
                 modelSelect.innerHTML = '<option value="" selected disabled>Loading models...</option>'; // set the value to "loading" while logic is run
                 modelSelect.disabled = true; // disable the element
+
                 // the axios library is used for making HTTP requests from both browser-based applications and Node.js.
                 // in this instance we are making a 'get' request to the NHTSA vehicle API library
                 // The 'response' in the .then() callback is an object returned by axios. It contains various properties related to the HTTP response.
