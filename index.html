@@ -1100,13 +1100,16 @@
                         if (models.length === 0) {
                             modelSelect.innerHTML = '<option value="" selected disabled>No models found</option>';
                         } else {
-                            models.sort((a, b) => a.Model_Name.localeCompare(b.Model_Name));
+                            const uniqueModels = new Set();
+                            models.forEach(model => uniqueModels.add(model.Model_Name));
+
+                            const sortedUniqueModels = Array.from(uniqueModels).sort((a, b) => a.localeCompare(b));
 
                             modelSelect.innerHTML = '<option value="" selected disabled>Select a model</option>';
-                            models.forEach(model => {
+                            sortedUniqueModels.forEach(modelName => {
                                 const option = document.createElement('option');
-                                option.value = model.Model_ID;
-                                option.textContent = model.Model_Name;
+                                option.value = modelName;
+                                option.textContent = modelName;
                                 modelSelect.appendChild(option);
                             });
                         }
