@@ -304,6 +304,26 @@
     transition: 0.5s; */
 }
 
+@media (max-width: 1199px) {
+    .feature-icon {
+        display: none !important;
+    }
+}
+
+/* Hide the services car image on small screens */
+@media (max-width: 1199px) {
+    .services-car-image {
+        display: none !important;
+    }
+}
+
+/* Show the services car image on larger screens */
+@media (min-width: 1200px) {
+    .services-car-image {
+        display: flex !important;
+    }
+}
+
 /*** Features End ***/
 
 /*** About Start ***/
