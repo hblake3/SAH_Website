@@ -285,6 +285,11 @@
 .feature .feature-item {
     display: flex;
     border-radius: 10px;
+    transition: transform .2s;
+}
+
+.feature .feature-item:hover {
+        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .feature .feature-item .feature-icon span {
@@ -721,6 +726,8 @@
         font-size: 40px;
         margin-bottom: 20px;
     }
+
+
 }
 /*** Banner End ***/
 
@@ -972,5 +979,6 @@
     background: var(--bs-dark);
 }
 /*** copyright end ***/
+
 
 
