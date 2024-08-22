@@ -295,13 +295,13 @@
     justify-content: center;
     color: var(--bs-secondary);
     background: var(--bs-primary);
-    border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;;
-    animation-name: icon-animat;
+    border-radius: 50%
+    /* animation-name: icon-animat;
     animation-duration: 5s;
     animation-delay: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    transition: 0.5s;
+    transition: 0.5s; */
 }
 
 /*** Features End ***/
